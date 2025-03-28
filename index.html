@@ -830,67 +830,206 @@
               </a>
             </li>
 
-
-            <!-- Exemple de projet Libft -->
-<li class="project-item active" data-filter-item data-category="42_projects" data-project="libft">
-  <a href="#">
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-      </div>
-      <img src="./assets/images/libft.webp" alt="libft_42" loading="lazy">
-    </figure>
-    <h3 class="project-title">Libft</h3>
-    <button class="info-btn">  
-      <p class="project-category">About This Project ℹ️</p>
-    </button>
-  </a>
-</li>
-
-<!-- Popup pour Libft -->
-<div class="popup hidden" data-project="libft">
-  <div class="popup-content">
-    <button class="close-popup">&times;</button>
-    <p class="full-text">
-      The Libft project at 42 consists of recreating a standard C library containing commonly used functions...
-    </p> 
-    <a href="https://github.com/maaloum-yassine/libft_42" target="_blank" class="view-more-link">
-      <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-    </a>
-  </div>
-</div>
-
-<!-- Exemple de projet Ft_printf -->
-<li class="project-item active" data-filter-item data-category="42_projects" data-project="Ft_printf">
-  <a href="#">
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-      </div>
-      <img src="./assets/images/ft_printf.jpg" alt="Ft_printf" loading="lazy">
-    </figure>
-    <h3 class="project-title">Ft_printf</h3>            
-    <button class="info-btn">  
-      <p class="project-category">About This Project ℹ️</p>
-    </button>
-  </a>
-</li>
-
-<!-- Popup pour Ft_printf -->
-<div class="popup hidden" data-project="Ft_printf">
-  <div class="popup-content">
-    <button class="close-popup">&times;</button>
-    <p class="full-text">
-      Detailed information about Ft_printf project.
-    </p>
-    <a href="https://github.com/maaloum-yassine/ft_printf" target="_blank" class="view-more-link">
-      <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-    </a>
-  </div>
-</div>
+            <!-- ******************************************************* project Libft  ******************************************************* -->
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="libft">
+              <a href="#" class="toggle-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                  </div>
+                  <img src="./assets/images/libft.webp" alt="libft_42" loading="lazy">
+                </figure>
+                <h3 class="project-title">Libft</h3>
+              </a>
+            </li>
+            
+            <!-- Popup pour Libft -->
+            <div class="popup hidden" data-project="libft">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  The Libft project at 42 consists of recreating a standard C library by implementing commonly used functions for handling strings,
+                  memory, numbers, and linked lists. It also includes data structures such as singly linked lists (t_list) and sometimes
+                  dynamic arrays to efficiently manage data sets. 
+                  The goal is to gain a deep understanding of memory management using malloc and free,
+                  as well as pointer and structure manipulation. This library will serve as a fundamental base for future 42 projects, 
+                  enabling more optimized and reusable code.
+                </p> 
+                <a href="https://github.com/maaloum-yassine/libft_42" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <!-- ************************************************************************************************************************* -->
 
 
-         
+             <!-- ******************************************************* project Ft_printf  ******************************************************* -->
+             <li class="project-item active" data-filter-item data-category="42_projects" data-project="Ft_printf">
+              <a href="#" class="toggle-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                  </div>
+                  <img src="./assets/images/ft_printf.jpg" alt="Ft_printf" loading="lazy">
+                </figure>
+                <h3 class="project-title">Ft_printf</h3>
+              </a>
+            </li>
+            
+            <!-- Popup pour Ft_printf  -->
+            <div class="popup hidden" data-project="Ft_printf">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  For the ft_printf project of the 42 school cursus, we must recreate the famous C library printf function. <br>
+                  This project teaches us about variadic arguments as well as structures if we plan to implement printf's extra flags.  
+                </p> 
+                <a href="https://github.com/maaloum-yassine/ft_printf" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <!-- ************************************************************************************************************************* -->
+           
+
+             <!-- *******************************************************  project get_next_line  ******************************************************* -->
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="get_next_line">
+              <a href="#" class="toggle-popup">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                  </div>
+                  <img src="./assets/images/get_next_line.webp" alt="get_next_line" loading="lazy">
+                </figure>
+                <h3 class="project-title">get_next_line</h3>
+              </a>
+            </li>
+           
+            <div class="popup hidden" data-project="get_next_line">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  Get Next Line is a project that involves developing a C function capable of reading a line, 
+                  character by character, from a file or standard input. The goal is to implement an efficient reading system by handling buffers
+                  and dynamically managing memory to adapt to any file size. This project highlights file handling, memory optimization, and pointer manipulation while adhering to strict constraints on resource allocation and deallocation.
+                </p> 
+                <a href="https://github.com/maaloum-yassine/Get-Next-Line" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <!-- *******************************************************  project Born2beroot  ******************************************************* -->
+
+            <li class="project-item  active" data-filter-item data-category="42_projects">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Born2beroot.jpg" alt="Born2beroot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Born2beroot</h3>
+                
+                <p class="project-category">42_projects</p>
+
+              </a>
+            </li>
+
+            <!-- *------------------------------------------------------------------------------------------------------------- -->
+
+              <!-- *******************************************************  project Minitalk  ******************************************************* -->
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="Minitalk">
+              <a href="#" class="toggle-popup">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project_Minitalk.jpeg" alt="Minitalk" loading="lazy">
+                </figure>
+                <h3 class="project-title">Minitalk</h3>
+              </a>
+            </li>
+            <div class="popup hidden" data-project="Minitalk">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  The goal of the project is to create a server that is able to receive and show messages from a client
+                  that you also created, using only 2 UNIX signals. Because of this constraint, you will need to make a
+                  system that can convert the characters you want to send to a binary signal, as well as be able to
+                  construct the signal back into the character.
+                </p>
+                <!-- Icône "œil" avec lien -->
+                <a href="https://github.com/maaloum-yassine/Minitalk" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+            
+            <!-- ******************************************************* **************************** ******************************************************* -->
+            
+            
+           <!-- *******************************************************  project So_long  ******************************************************* -->
+
+           <li class="project-item active" data-filter-item data-category="42_projects" data-project="so_long">
+            <a href="#" class="toggle-popup">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                </div>
+                <img src="./assets/images/so_long.jpg" alt="So_long_42" loading="lazy">
+              </figure>
+              <h3 class="project-title">So_long_game_2d</h3>            
+            </a>
+          </li>
+          <div class="popup hidden" data-project="so_long">
+            <div class="popup-content">
+              <button class="close-popup">&times;</button>
+              <p class="full-text">
+                Solong is a 2D game project where players navigate through a maze, collecting items and avoiding obstacles. 
+                It involves tasks like parsing map files,
+                handling player movement, and implementing basic game mechanics using the MinilibX graphics library.
+              </p>
+              <!-- Icône "œil" avec lien -->
+              <a href="https://github.com/maaloum-yassine/So-Long" target="_blank" class="view-more-link">
+                <ion-icon name="logo-github" class="github-icon"></ion-icon>
+              </a>
+            </div>
+          </div> 
+          <!-- ********************************************************************************************************************************* -->
+        
+          <li class="project-item active" data-filter-item data-category="42_projects" data-project="push_swap">
+            <a href="#" class="toggle-popup">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                </div>
+                <img src="./assets/images/push_swap.gif"  alt="push_swap" loading="lazy">
+              </figure>
+          
+              <h3 class="project-title">push_swap</h3>            
+            </a>
+          </li>
+
+          <div class="popup hidden" data-project="push_swap">
+            <div class="popup-content">
+              <button class="close-popup">&times;</button>
+              <p class="full-text">
+                Push_swap is an algorithmic project that involves sorting a stack of numbers using a minimal number
+                 of operations on two stacks (A and B). The goal is to design an optimized algorithm capable of handling lists of 
+                 various sizes while minimizing the number of instructions. This project challenges the understanding of sorting algorithms, memory management in C, and performance optimization.<br> It also helps develop skills in data structure manipulation and logical algorithm design, 
+                all while adhering to the constraints set by the execution environment.
+              </p>
+              <!-- Icône "œil" avec lien -->
+              <a href="https://github.com/maaloum-yassine/push_swap_42" target="_blank" class="view-more-link">
+                <ion-icon name="logo-github" class="github-icon"></ion-icon>
+              </a>
+            </div>
+          </div>
+
 
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
@@ -911,167 +1050,44 @@
             </li>
 
 
-            <li class="project-item  active" data-filter-item data-category="42_projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/get_next_line.webp" alt="get_next_line" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">get_next_line</h3>
-
-                <p class="project-category">42_projects</p>
-
-              </a>
-            </li>
+         
 
 
-            <li class="project-item  active" data-filter-item data-category="42_projects">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Born2beroot.jpg" alt="Born2beroot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Born2beroot</h3>
-                
-                <p class="project-category">42_projects</p>
-
-              </a>
-            </li>
-
-            
-
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project_Minitalk.jpeg" alt="Minitalk_42" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Minitalk_42</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
-              </a>
-            </li>
-            <div class="popup hidden">
-              <div class="popup-content">
-                <button class="close-popup">&times;</button>
-                <p class="full-text">
-                  The goal of the project is to create a server that is able to receive and show messages from a client
-                  that you also created, using only 2 UNIX signals. Because of this constraint, you will need to make a
-                  system that can convert the characters you want to send to a binary signal, as well as be able to
-                  construct the signal back into the character.
-                </p>
-                <!-- Icône "œil" avec lien -->
-                <a href="https://github.com/maaloum-yassine/Minitalk" target="_blank" class="view-more-link">
-                  <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-                </a>
-              </div>
-            </div>
+          
 
 
 
 
-
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-                  </div>
-                  <img src="./assets/images/so_long.jpg" alt="So_long_42" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">So_long_game_2d</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
-              </a>
-            </li>
-            <div class="popup hidden">
-              <div class="popup-content">
-                <button class="close-popup">&times;</button>
-                <p class="full-text">
-                  The goal of the project is to create a server that is able to receive and show messages from a client
-                  that you also created, using only 2 UNIX signals. Because of this constraint, you will need to make a
-                  system that can convert the characters you want to send to a binary signal, as well as be able to
-                  construct the signal back into the character.
-                </p>
-                <!-- Icône "œil" avec lien -->
-                <a href="https://github.com/maaloum-yassine/Minitalk" target="_blank" class="view-more-link">
-                  <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-                </a>
-              </div>
-            </div>
-
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-                  </div>
-                  <img src="./assets/images/push_swap.gif"  alt="push_swap" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">push_swap</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
-              </a>
-            </li>
-
-
-
-            <div class="popup hidden">
-              <div class="popup-content">
-                <button class="close-popup">&times;</button>
-                <p class="full-text">
-                  The goal of the project is to create a server that is able to receive and show messages from a client
-                  that you also created, using only 2 UNIX signals. Because of this constraint, you will need to make a
-                  system that can convert the characters you want to send to a binary signal, as well as be able to
-                  construct the signal back into the character.
-                </p>
-                <!-- Icône "œil" avec lien -->
-                <a href="https://github.com/maaloum-yassine/Minitalk" target="_blank" class="view-more-link">
-                  <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-                </a>
-              </div>
-            </div>
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
-            
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="philosophers">
+              <a href="#"  class="toggle-popup">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
                   </div>
                   <img src="./assets/images/philosophers.webp"  alt="philosophers" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">Philosophers</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
               </a>
             </li>
-            <div class="popup hidden">
+
+
+            <div class="popup hidden" data-project="philosophers">
               <div class="popup-content">
                 <button class="close-popup">&times;</button>
                 <p class="full-text">
-                  The goal of the project is to create a server that is able to receive and show messages from a client
-                  that you also created, using only 2 UNIX signals. Because of this constraint, you will need to make a
-                  system that can convert the characters you want to send to a binary signal, as well as be able to
-                  construct the signal back into the character.
+                  Philosophers is a project that focuses on solving the classic synchronization 
+                  problem known as the "Dining Philosophers Problem." The goal is to simulate a scenario where multiple 
+                  philosophers, sitting at a table, alternately think and eat, but they need to share limited resources 
+                  (forks) without causing deadlocks or race conditions. The project requires designing a solution using 
+                  semaphores to synchronize access to shared resources between processes and to avoid issues such as deadlock,
+                  starvation, and data corruption. Instead of using threads, we implemented the solution using multiple 
+                  processes, adding complexity in managing inter-process communication and synchronization. 
+                  This project provides a deep understanding of concurrency control, process management,
+                  and the implementation of efficient, process-safe systems, with a focus on utilizing 
+                  semaphores to ensure proper synchronization between processes.
                 </p>
-                <!-- Icône "œil" avec lien -->
-                <a href="https://github.com/maaloum-yassine/Minitalk" target="_blank" class="view-more-link">
-                  <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                <a href="https://github.com/maaloum-yassine/Philosophers" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
                 </a>
               </div>
             </div>
@@ -1080,32 +1096,34 @@
 
 
 
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
-            
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="Minishell">
+              <a href="#" class="toggle-popup">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
                   </div>
                   <img src="./assets/images/Minishell.jpg"  alt="Minishell" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">Minishell</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
               </a>
             </li>
-            <div class="popup hidden">
+            <div class="popup hidden" data-project="Minishell">
               <div class="popup-content">
                 <button class="close-popup">&times;</button>
                 <p class="full-text">
-                  The goal of the project is to create a server that is able to receive and show messages from a client
-                  that you also created, using only 2 UNIX signals. Because of this constraint, you will need to make a
-                  system that can convert the characters you want to send to a binary signal, as well as be able to
-                  construct the signal back into the character.
-                </p>
-                <!-- Icône "œil" avec lien -->
-                <a href="https://github.com/maaloum-yassine/Minitalk" target="_blank" class="view-more-link">
-                  <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                  Minishell is a project from the 42 school that involves creating a simple Unix shell program.<br/> 
+                  The goal is to design and implement a basic command-line interface (CLI) that can execute commands,
+                  handle pipes, input/output redirection, and manage environment variables, 
+                  all while mimicking the behavior of a real shell. The project focuses on handling the parsing of user input,
+                  managing processes using fork and exec system calls, 
+                  and implementing built-in commands such as cd, echo, exit, pwd, env, export  and unset.<br> Additionally, 
+                  the shell must properly manage foreground and background processes, handle signals (such as SIGINT and SIGQUIT), 
+                  and support process termination.<br> One of the key challenges is to correctly handle command-line syntax,
+                  including parsing for operators like pipes and redirections. The project also requires handling errors and edge cases in a way that ensures the shell runs smoothly.
+                  <br>The goal is to understand the inner workings of shells, improve skills in process management, system calls, signal handling, and memory management,
+                  while also developing a deeper knowledge of how operating systems execute commands in a shell environment.
+                <a href="https://github.com/maaloum-yassine/Minishell" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
                 </a>
               </div>
             </div>
@@ -1113,40 +1131,77 @@
             
 
 
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
-            
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="Cub3D">
+              <a href="#" class="toggle-popup">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
                   </div>
-                  <img src="./assets/images/cub3d.gif"  alt="push_swap" loading="lazy">
+                  <img src="./assets/images/cub3d.gif"  alt="Cub3D" loading="lazy">
                 </figure>
-            
-                <h3 class="project-title">push_swap</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
+                <h3 class="project-title">Cub3D</h3>            
               </a>
             </li>
-
+            <div class="popup hidden" data-project="Cub3D">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  Cub3D is a project from the 42 school that involves creating a 3D raycasting engine, 
+                  simulating a first-person perspective similar to classic 3D games like Wolfenstein 3D.
+                  The goal is to design and implement a graphical engine that can render a 3D environment based on a simple 2D map, 
+                  using raycasting to project walls,
+                  floors, and ceilings onto the screen. The project requires handling basic graphics and input management, 
+                  implementing the raycasting algorithm to detect intersections with walls, and drawing textures to create a visually
+                  rich environment. This includes properly mapping textures onto surfaces based on the player's viewpoint and ensuring 
+                  they scale correctly.<br>
+                  Additionally, the project involves parsing a map file that defines the layout of the environment, including walls, floors, and objects, and converting it into a format that the engine can understand. The engine must interpret and validate the map file, handle potential errors, and ensure a seamless experience. The project also focuses on performance optimization to ensure smooth rendering and responsiveness.<br>
+                  By working on Cub3D, you'll develop a deep understanding of computer graphics, 3D rendering, raycasting algorithms, user input handling, texture mapping, and file parsing, all of which are essential skills in building game engines and graphical applications.
+                  </p>
+                  <a href="https://github.com/maaloum-yassine/Cub3D" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
      
 
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
-            
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="CPP_MODULES_42">
+              <a href="#" class="toggle-popup">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
                   </div>
-                  <img src="./assets/images/Module_Cpp.jpg"  alt="push_swap" loading="lazy">
+                  <img src="./assets/images/Module_Cpp.jpg"  alt="CPP_MODULES_42" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">CPP_MODULES_42</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
               </a>
             </li>
-
+            <div class="popup hidden" data-project="CPP_MODULES_42">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  The C++42 program consists of 10 modules, numbered from Module 00 to Module 09, each designed to teach different aspects of the C++ language. These modules progressively introduce both fundamental and advanced topics, providing a comprehensive understanding of C++ programming. Each module contains a series of exercises that focus on specific concepts, allowing you to practice and reinforce your skills.
+                  <br/> <br/>
+                  MD_00 : introduces the basics of C++, focusing on the differences between C and C++ and providing an introduction to Object-Oriented Programming (OOP).<br/><br/>
+                  MD_01 : covers memory allocation, references, and pointers to members, teaching you how to manage memory efficiently and work with C++-specific features. <br/><br/>
+                  MD_02 : dives into Ad-hoc polymorphism, overloading functions, and the orthodox canonical class pattern in C++, providing deeper insights into object-oriented design.<br/><br/>
+                  MD_03 : focuses on Inheritance, teaching you how to create hierarchical relationships between classes in C++.<br/><br/>
+                  MD_04 : covers subtype polymorphism, including abstract classes and interfaces, enabling you to design flexible and reusable code.<br/><br/>
+                  MD_05 : explores exceptions and error handling using try/catch blocks in C++, helping you manage exceptional conditions in your programs.<br/><br/>
+                  MD_06 : teaches you about type casting in C++, explaining the various types of casts and their appropriate use cases.<br/><br/>
+                  MD_07 : introduces templates, allowing you to write generic functions and classes that can work with different data types.<br/><br/>
+                  MD_08 : focuses on templated containers, iterators, and algorithms, teaching you how to create and manipulate collections of data efficiently.<br/><br/>
+                  MD_09 : explores the various standard containers in C++, helping you understand how to use them effectively for data storage and manipulation.<br/><br/>
+                  Each module is structured to build on previous knowledge, making it easier to grasp advanced C++ concepts while reinforcing the basics.<br/><br/>
+                </p>
+                <a href="https://github.com/maaloum-yassine/CPP_MODULES_42" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
             
-
+            
+            
+                        
 
 
 
@@ -1166,11 +1221,9 @@
               </a>
             </li>
 
-            
 
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
-            
+            <li class="project-item active" data-filter-item data-category="42_projects"  data-project="Inception">
+              <a href="#" class="toggle-popup">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
@@ -1179,15 +1232,25 @@
                 </figure>
             
                 <h3 class="project-title">Inception</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
               </a>
             </li>
+            <div class="popup hidden" data-project="Inception">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  I Mhere
+                  </p>
+                  <a href="https://github.com/maaloum-yassine/Inception" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+     
 
 
 
-
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="Irc">
+              <a href="#" class="toggle-popup">
             
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1195,16 +1258,26 @@
                   </div>
                   <img src="./assets/images/Irc.webp"  alt="ft_irc" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">ft_irc</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
               </a>
             </li>
+            <div class="popup hidden" data-project="Irc">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  I Mhere
+                  </p>
+                  <a href="https://github.com/maaloum-yassine/ft_irc" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+     
 
 
 
-            <li class="project-item active" data-filter-item data-category="42_projects">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="42_projects" data-project="Transcendence"> 
+              <a href="#" class="toggle-popup">
             
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1214,10 +1287,20 @@
                 </figure>
             
                 <h3 class="project-title">Transcendence</h3>            
-                <button class="info-btn">  <p class="project-category">About This Project ℹ️</p></button>
               </a>
             </li>
-
+            <div class="popup hidden" data-project="Transcendence">
+              <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <p class="full-text">
+                  I Mhere
+                  </p>
+                  <a href="https://github.com/maaloum-yassine/Transcendence_42" target="_blank" class="view-more-link">
+                  <ion-icon name="logo-github" class="github-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+     
 
 
 
@@ -1541,6 +1624,9 @@
     -->
     
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <script src="./assets/js/script.js"></script>
 
   <!--

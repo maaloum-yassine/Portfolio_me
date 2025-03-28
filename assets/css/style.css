@@ -1980,8 +1980,6 @@ textarea {
 
 /* Style de la fenêtre modale (popup) */
 
-
-
 .popup {
   display: none;
   position: fixed;
@@ -1997,6 +1995,27 @@ textarea {
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   z-index: 999;
+  max-height: 80vh; /* Limite la hauteur de la fenêtre popup à 80% de la hauteur de l'écran */
+  overflow-y: auto; /* Ajoute une barre de défilement verticale si le contenu dépasse */
+}
+
+/* Style du scrollbar personnalisé */
+.popup::-webkit-scrollbar {
+  width: 8px; /* Largeur de la barre de défilement */
+}
+
+.popup::-webkit-scrollbar-track {
+  background-color: #333; /* Couleur de la piste de défilement */
+  border-radius: 10px; /* Arrondir les bords de la piste */
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background-color: #888; /* Couleur de la barre de défilement */
+  border-radius: 10px; /* Arrondir les bords de la barre */
+}
+
+.popup::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Couleur au survol de la barre */
 }
 
 /* Style de la fenêtre modale quand elle est affichée */
@@ -2019,6 +2038,7 @@ textarea {
 .close-popup:hover {
   color: red;
 }
+
 
 /* Style de l'icône "œil" et du lien */
 .view-more-link {

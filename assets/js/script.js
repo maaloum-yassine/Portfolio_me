@@ -189,18 +189,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 
-// Sélectionner tous les boutons d'information et les popups
-const infoBtns = document.querySelectorAll('.info-btn');
+// Sélectionner tous les icônes d'œil et les popups
+const eyeIcons = document.querySelectorAll('.toggle-popup');
 const popups = document.querySelectorAll('.popup');
 const closePopupBtns = document.querySelectorAll('.close-popup');
 
 // Fonction pour ouvrir le popup
-infoBtns.forEach(infoBtn => {
-  infoBtn.addEventListener('click', function(event) {
+eyeIcons.forEach(eyeIcon => {
+  eyeIcon.addEventListener('click', function(event) {
     event.stopPropagation(); // Empêche la propagation de l'événement
     const projectId = this.closest('.project-item').getAttribute('data-project');
     const popup = document.querySelector(`.popup[data-project="${projectId}"]`);
-    popup.classList.add('visible');
+    if (popup) {
+      popup.classList.add('visible');
+    }
   });
 });
 
@@ -216,9 +218,9 @@ closePopupBtns.forEach(closePopupBtn => {
 // Fermer le popup si on clique en dehors
 window.addEventListener('click', function(event) {
   popups.forEach(popup => {
-    // Si le clic est en dehors du popup, on le ferme
-    if (!popup.contains(event.target)) {
+    if (!popup.contains(event.target) && !event.target.closest('.eye-icon')) {
       popup.classList.remove('visible');
     }
   });
 });
+
